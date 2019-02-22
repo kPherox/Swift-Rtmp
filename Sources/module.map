@@ -1,0 +1,6 @@
+module CRtmp [system] {
+    link "rtmp"
+    umbrella header "librtmp-umbrella.h"
+    export *
+    module * { export * }
+}
