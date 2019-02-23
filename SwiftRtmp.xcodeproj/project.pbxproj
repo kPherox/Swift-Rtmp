@@ -10,6 +10,7 @@
 		3D912D6F2220811300CC3419 /* SwiftRtmp.h in Headers */ = {isa = PBXBuildFile; fileRef = 3D912D6D2220811200CC3419 /* SwiftRtmp.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3D912DC022208E0200CC3419 /* Rtmp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D912DBF22208E0200CC3419 /* Rtmp.swift */; };
 		3D912DC42220989300CC3419 /* librtmp-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3D912DC32220989300CC3419 /* librtmp-umbrella.h */; };
+		3D912DDB222146C600CC3419 /* String++.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D912DDA222146C600CC3419 /* String++.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -17,7 +18,9 @@
 		3D912D6D2220811200CC3419 /* SwiftRtmp.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwiftRtmp.h; sourceTree = "<group>"; };
 		3D912D6E2220811300CC3419 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3D912DBE222086EF00CC3419 /* module.map */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; path = module.map; sourceTree = "<group>"; };
+		3D912DBF22208E0200CC3419 /* Rtmp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rtmp.swift; sourceTree = "<group>"; };
 		3D912DC32220989300CC3419 /* librtmp-umbrella.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "librtmp-umbrella.h"; sourceTree = "<group>"; };
+		3D912DDA222146C600CC3419 /* String++.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String++.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +54,7 @@
 			isa = PBXGroup;
 			children = (
 				3D912DBF22208E0200CC3419 /* Rtmp.swift */,
+				3D912DDA222146C600CC3419 /* String++.swift */,
 				3D912D6D2220811200CC3419 /* SwiftRtmp.h */,
 				3D912DBE222086EF00CC3419 /* module.map */,
 				3D912DC32220989300CC3419 /* librtmp-umbrella.h */,
@@ -138,6 +142,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D912DDB222146C600CC3419 /* String++.swift in Sources */,
 				3D912DC022208E0200CC3419 /* Rtmp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
