@@ -11,15 +11,15 @@ import CRtmp
 
 public final class Rtmp {
 
-    var rtmp: RTMP
+    let rtmp: UnsafeMutablePointer<RTMP>
 
-    public init(_ rtmp: RTMP) {
+    init(_ rtmp: UnsafeMutablePointer<RTMP>) {
         self.rtmp = rtmp
-        RTMP_Init(&self.rtmp)
+        RTMP_Init(self.rtmp)
     }
 
     public convenience init() {
-        self.init(RTMP())
+        self.init(RTMP_Alloc())
     }
 
 }
