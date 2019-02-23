@@ -13,9 +13,13 @@ public final class Rtmp {
 
     var rtmp: RTMP
 
-    public init() {
-        self.rtmp = RTMP()
+    public init(_ rtmp: RTMP) {
+        self.rtmp = rtmp
         RTMP_Init(&self.rtmp)
+    }
+
+    public convenience init() {
+        self.init(RTMP())
     }
 
 }
