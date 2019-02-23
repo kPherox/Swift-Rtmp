@@ -38,15 +38,15 @@ public final class Rtmp {
         return result != 0
     }
 
-    public func setBuffer(milliseconds size: Int32) {
+    public func setBuffer(milliSeconds size: Int32) {
         RTMP_SetBufferMS(self.rtmp, size)
     }
 
-    public func updateBuffer() {
+    public func updateBufferMilliSeconds() {
         RTMP_UpdateBufferMS(self.rtmp)
     }
 
-    public func setOpt(kind: String, value: String) -> Bool {
+    public func setOption(kind: String, value: String) -> Bool {
         var avOption: AVal = kind.toAVal()
         var avValue: AVal = value.toAVal()
         let result: Int32 = RTMP_SetOpt(self.rtmp, &avOption, &avValue)
