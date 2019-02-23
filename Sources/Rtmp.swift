@@ -55,4 +55,21 @@ public final class Rtmp {
         return result != 0
     }
 
+    public func setupStream(proto: RtmpProtocol, host: String, port: Int, socketHost: String, playpath: String, tcUrl: String, swfUrl: String, pageUrl: String, appName: String, auth: String, swfSHA256Hash: String, swfSize: Int, flashVer: String, subscribepath: String, usherToken: String, dStart: Int, dStop: Int, bLiveStream: Int, timeout: Int) {
+        var avHost: AVal = host.toAVal()
+        var avSocketHost: AVal = socketHost.toAVal()
+        var avPlaypath: AVal = playpath.toAVal()
+        var avTcUrl: AVal = tcUrl.toAVal()
+        var avSwfUrl: AVal = swfUrl.toAVal()
+        var avPageUrl: AVal = pageUrl.toAVal()
+        var avAppName: AVal = appName.toAVal()
+        var avAuth: AVal = auth.toAVal()
+        var avSwfSHA256Hash: AVal = swfSHA256Hash.toAVal()
+        var avFlashVer: AVal = flashVer.toAVal()
+        var avSubscribepath: AVal = subscribepath.toAVal()
+        var avUsherToken: AVal = usherToken.toAVal()
+
+        RTMP_SetupStream(self.rtmp, proto.toInt32(), &avHost, UInt32(port), &avSocketHost, &avPlaypath, &avTcUrl, &avSwfUrl, &avPageUrl, &avAppName, &avAuth, &avSwfSHA256Hash, UInt32(swfSize), &avFlashVer, &avSubscribepath, &avUsherToken, Int32(dStart), Int32(dStop), Int32(bLiveStream), timeout)
+    }
+
 }
