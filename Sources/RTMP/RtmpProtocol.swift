@@ -1,6 +1,6 @@
 //
 //  RtmpProtocol.swift
-//  SwiftRtmp
+//  swift-rtmp
 //
 //  Created by kPherox on 2019/02/24.
 //  Copyright © 2019 kPherox. All rights reserved.

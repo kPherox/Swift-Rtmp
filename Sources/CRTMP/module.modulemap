@@ -1,0 +1,5 @@
+module CRTMP [system] {
+  header "umbrella.h"
+  link "rtmp"
+  export *
+}

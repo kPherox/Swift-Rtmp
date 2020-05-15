@@ -1,13 +1,13 @@
 //
 //  String++.swift
-//  SwiftRtmp
+//  swift-rtmp
 //
 //  Created by kPherox on 2019/02/23.
 //  Copyright © 2019 kPherox. All rights reserved.
 //
 
 import Foundation
-import CRtmp
+import CRTMP
 
 extension String {
 
