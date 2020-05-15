@@ -9,7 +9,7 @@
 import Foundation
 import CRTMP
 
-enum AMFDataTypes {
+public enum AMFDataTypes {
 
     case number
     case boolean

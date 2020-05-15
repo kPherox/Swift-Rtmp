@@ -9,7 +9,7 @@
 import Foundation
 import CRTMP
 
-enum AMF3DataTypes {
+public enum AMF3DataTypes {
 
     case undefined
     case null

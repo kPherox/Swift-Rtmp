@@ -9,7 +9,7 @@
 import Foundation
 import CRTMP
 
-extension RTMP {
+public extension RTMP {
 
     struct Chunk {
 
