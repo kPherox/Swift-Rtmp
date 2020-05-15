@@ -22,4 +22,8 @@ extension String {
         return AVal(av_val: self.toCString(), av_len: Int32(self.count))
     }
 
+    init<T>(fromCCharTuple tuple: T) {
+        let bytes = Mirror(reflecting: tuple).children.map { $0.value as! Int8 }
+        self.init(describing: bytes)
+    }
 }
